@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Анастасия  Лукина](https://up.htmlacademy.ru/htmlcss/32/user/1744989).
-* Наставник: [Алиса dear Пепел](https://htmlacademy.ru/profile/id615601).
+* Наставник: [Алиса Пепел](https://htmlacademy.ru/profile/id615601).
 
 ---
 
