@@ -69,11 +69,14 @@
       </nav>
     </header>
 
-    <main class="main-index">
-    <section class="gallery">
+
+    <main class="main-container main-index">
+    <div class="page-container">
+      <section class="gallery">
         <h2 class="visually-hidden">Популярные товары</h2>
         <img class="slider-image" src="img/slider/slider-1.png" alt="Виды техники" width="560" height="560" >
 
+        <div class="description-slider">
         <h3>Порхает как бабочка,
           жалит как пчела!</h3>
           <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
@@ -87,8 +90,11 @@
               <dd>Радиус поражения</dd>
         </dl>
         </table>
+      </div>
 
         <img class="slider-image" src="img/slider/slider-2.png" alt="Виды техники" >
+
+        <div class="description-slider">
         <h3>Худеем
           правильно!</h3>
           <p class="description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
@@ -100,8 +106,11 @@
               <dd>Без подзарядки</dd>
         </dl>
         </table>
+      </div>
 
         <img class="slider-image" src="img/slider/slider-3.png" alt="Виды техники" >
+
+        <div class="description-slider">
         <h3>Делай селфи,
           как Бен Стиллер!</h3>
           <p class="description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
@@ -117,6 +126,7 @@
               <dd>Материал</dd>
         </dl>
         </table>
+      </div>
 
 
         <ol class="slider-pagination">
@@ -144,9 +154,9 @@
           <span class="visually-hidden">Следующее фото</span>
         </button>
 
-    </section>
+      </section>
 
-    <section class="category">
+      <section class="category">
       <h2 class="visually-hidden">Категории</h2>
       <ul class="category-list">
         <li class="category-item">
@@ -198,9 +208,11 @@
           </a>
         </li>
       </ul>
-    </section>
+      </section>
+      </div>
 
-    <section>
+    <div class="container-services"> 
+      <section>
       <h2 class="visually-hidden">Сервисы</h2>
       <ul class="services-list">
         <li>
@@ -215,56 +227,57 @@
       </ul>
     
 
-    <div class="delivery">
+      <div class="delivery">
       <h3 class="delivery-title">Доставка</h3>
       <p>Мы с удовольствием доставим ваш товар прямо
         к вашему подъезду совершенно бесплатно! Ведь
         мы неплохо заработаем, поднимая его на ваш этаж.</p>
-    </div>
+      </div>
 
-    <div class="guarantee">
+      <div class="guarantee">
       <h3 class="guarantee-title">Гарантия</h3>
       <p>Если из-за возгорания купленного у нас товара у вас
         сгорит дом — не переживайте, мы выдадим вам новый.
         Товар, не дом, конечно же.</p>
-    </div>
+      </div>
 
-    <div class="credit">
+      <div class="credit">
       <h3 class="credit-title">Кредит</h3>
       <p>Залезть в долговую яму стало проще! 
         Кредитные консультанты подберут для вас наиболее выгодные условия кредита. 
         Выгодные для банка, разумеется.</p>
-    </div>
+      </div>
+    </div> 
+      </section>
 
-    </section>
+      <section class="info">
+        <a class="button-info" href="#">
+        <span class="icon"></span>
+        </a>
+        <p>Доставим редкий товар под заказ</p>
+      </section>
 
-    <section class="info">
-    <a class="button" href="#">
-      <span class="icon"></span>
-    </a>
-      <p>Доставим редкий товар под заказ</p>
-</section>
+    <div class="about-and-contacts">  
+      <section class="about">
+        <h2 class="about-title">О нас</h2>
+        <p class="about-paragraph">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+      <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
 
-    <section class="about">
-      <h2 class="about-title">О нас</h2>
-      <p class="about-paragraph">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-    <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-
-    <ul class="about-list">
-      <li>
+      <ul class="about-list">
+        <li>
         Меловые линии
-      </li>
-      <li>
+        </li>
+        <li>
         СДИК
-      </li>
-      <li>
+        </li>
+        <li>
         ТоксБерри
-      </li>
-    </ul>
-    <a class="button" href="#">Подробнее о нас</a>
+        </li>
+      </ul>
+      <a class="button" href="#">Подробнее о нас</a>
 
-    </section>
-    <section class="contacts">
+      </section>
+      <section class="contacts">
       <h2 class="contacts-title">Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис. 
         Заодно, сможете проверить работоспособность покупки. </p>
@@ -280,6 +293,9 @@
         </ul>
         <a class="button" href="#">Напишите нам</a>
       </section>
+    </div>
+
+  <div class="page-newsletter">
 
       <section class="newsletter">
         <h2 class="newsletter-title">Подпишитесь
@@ -299,8 +315,10 @@
           
       </section>
     </main>
+  </div>
 
     <footer class="page-footer">
+      <div class="page-footer-container">
       <section class="footer-contacts">
         <a class="logo-device" href="#">
           <img class="footer-logo" src="img/svg/device_footer.svg" alt="Логотип «Девайс»" width="144,9" height="36"></a>
@@ -346,6 +364,7 @@
           <img class="logo-htmlacademy" src="img/svg/htmlacademy.svg" alt="Логотип «html academy»" width="115" height="34"></a>
           
       </section>
+    </div>
 
     </footer>
 

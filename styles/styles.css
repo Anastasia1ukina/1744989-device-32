@@ -31,8 +31,16 @@
     font-display: swap;
   }
 
+  html {
+    height: 100%;
+
+  }
   
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     line-height: 30px;
@@ -43,6 +51,23 @@ body {
   .page-header {
     color: #000000;
     background: #FFE17F;
+  }
+
+  .navigation {
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
+  }
+
+  .navigation-link {
+    max-width: 1301px;
+    margin-left: auto;
+  }
+
+  .navigation-user {
+    width: 1343px;
+    margin: 0;
+    padding: 0;
   }
 
   .navigation-link {
@@ -56,6 +81,83 @@ body {
     text-decoration: none;
     text-transform: uppercase;
 
+  }
+
+  .main-container {
+    flex-grow: 1;
+  }
+
+  .page-container {
+    width: 1161px;
+    margin: 0 auto;
+  }
+
+  .gallery {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .description-slider {
+    width: 560px;
+  }
+
+  .slider-image {
+    width: 560px;
+  }
+
+  .slider-pagination {
+    width: 560px;
+  }
+
+  .category-list {
+    display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  }
+
+  .category-item {
+    width: 160px;
+  }
+
+  .container-services {
+    width: 1440px;
+    margin: 0 auto;
+  }
+
+  .info {
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
+  
+  }
+
+  .about-and-contacts {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 1160px;
+    margin: 0 auto;
+  
+  }
+
+  .about {
+    margin: 0;
+    padding: 0;
+    width: 560px;
+  }
+
+  .contacts {
+    margin: 0;
+    padding: 0;
+    width: 560px;
+  }
+
+  .page-newsletter {
+    width: 1440px;
+    margin: 0 auto;
   }
 
   .navigation-link-user {
@@ -307,4 +409,38 @@ color: #000000;
 
 .sorting-type {
     background: #EBEBEB;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.footer-contacts {
+  width: 238px;
+  margin-right: 114px;
+}
+
+.list {
+  margin-bottom: auto;
+  width: 448px;
+}
+
+.footer-social {
+  margin-left: auto;
+  max-width: 293px;
+}
+
+.catalog-products {
+  display: flex;
+}
+
+.catalog-filter {
+  width: 200px;
+  margin-right: 68px;
+}
+
+.catalog-right-column {
+  width: 760px;
 }
