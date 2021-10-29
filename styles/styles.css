@@ -62,6 +62,9 @@ body {
   .page-header {
     color: #000000;
     background: #FFE17F;
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .navigation {
@@ -91,6 +94,8 @@ body {
   }
 
   .navigation-link {
+    display: block;
+    padding: 19px 62px;
     line-height: 21px;
     letter-spacing: 0.2em;
     color: #000000;
@@ -172,11 +177,18 @@ body {
   }
 
   .page-newsletter {
-    width: 1440px;
+    width: 1160px;
+    display: flex;
+    justify-content: space-between;
     margin: 0 auto;
+    padding: 0;
+    background-color: #F0F0F0;
   }
 
   .navigation-link-user {
+    display: block;
+    flex-wrap: wrap; 
+    padding: 25px 14px;
     font-family: "Rubik", sans-serif;
     font-size: 16px;
     text-align: center;
@@ -204,13 +216,20 @@ h3 {
 
 .newsletter {
     color: #000000;
-    background: #F0F0F0;
 }
 
-.info {
+.button-newsletter {
+  background: #F0F0F0;
+  font-family: inherit;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 800;
+    text-align: center;
     color: #000000;
-    background: #F0F0F0;
+    text-decoration: none;
+    text-transform: uppercase;
 }
+   
 
 .delivery{
     color: #000000;
@@ -248,18 +267,6 @@ h3 {
   }
 
   
-.contacts {
-    font-weight: 700;
-  }
-  
-  /* Title */
-  .contacts-title {
-    font-size: 32px;
-    line-height: 35px;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-  
   .contacts-address {
     font-style: normal;
   }
@@ -291,16 +298,15 @@ color: #444444;
   }
   
   .footer-navigation {
-    font-family: "Raleway", sans-serif; 
-    font-style: normal;
+    display: flex;
     font-weight: 800;
-    font-size: 18px;
     line-height: 21px;
     text-align: center;
     letter-spacing: 0.2em;
     text-decoration: none;
     text-transform: uppercase;
     color: #FFFFFF;
+    list-style-type: none;
   }
 
   .inner-header-title {
@@ -430,7 +436,7 @@ color: #000000;
 
 .page-footer-container {
   display: flex;
-  width: 1440px;
+  width: 1160px;
   margin: 0 auto;
 }
 
@@ -460,4 +466,65 @@ color: #000000;
 
 .catalog-right-column {
   width: 760px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-list {
+  padding-left: 0;
+  list-style-type: none;
+  width: 280px;
+}
+
+.button-info {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  width: 100%;
+  background: #F0F0F0;
+
+}
+
+.about-and-contacts p, .contacts-schedule {
+  font-family: "Rubik";
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts-schedule {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+p {
+  font-family: "Rubik";
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 30px;
+color: #444444;
+
+}
+
+.newsletter {
+  margin: 0;
+    padding: 0;
+    width: 560px;
+}
+
+.about-text {
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
 }
