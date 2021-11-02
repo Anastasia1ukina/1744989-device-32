@@ -18,11 +18,6 @@
                   <input type="search" name="q" placeholder="Поиск по сайту">
                 </form>
             </li>
-            <li>
-              <section>
-                <a class="navigation-link navigation-link-current" href="catalog.html">Каталог товаров</a>
-              </section>
-            </li>
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
@@ -39,8 +34,13 @@
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
+            <li>
               <section>
+                <a class="navigation-link navigation-link-current" href="catalog.html">Каталог товаров</a>
+              </section>
+            </li>
+            <li class="navigation-item">
+              <section class="navigation-delivery-garant-contacts">
               <a class="navigation-link" href="#" >Доставка</a>
             </li>
             <li class="navigation-item">
@@ -72,9 +72,9 @@
           </header>
 
           <section class="catalog-products">
-                <h2 class="catalog-products">фильтр:</h2>
               </nav>
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+                <h2 class="catalog-products">фильтр:</h2>
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-title">Стоимость</legend>
                     <button class="range-toggle toggle-min" type="button">
@@ -156,6 +156,8 @@
               </form>
 
             <div class="catalog-right-column">
+               <!-- Сортировка -->
+               <div class="sorting-container">
               <form class="sorting-type" action="https://echo.htmlacademy.ru">
                 <label class="sorting" for="sorting">Сортировка:</label>
                 <select class="select-control" id="sorting" name="sorting">
@@ -166,14 +168,13 @@
                 <button class="visually-hidden" type="submit">Отсортировать продукты</button>
               </form>
 
-              <button class="button">
-                <img src="">
+              <button class="button-arrow">
                 <span class="visually-hidden">От меньшего к большему</span>
               </button>
-              <button class="button">
-                <img src="">
+              <button class="button-arrow">
                 <span class="visually-hidden">От большего к меньшему</span>
               </button>
+            </div>
 
                 <ul class="product-list">
                     <li class="product-card">
@@ -251,6 +252,7 @@
           <img class="footer-logo" src="img/svg/device_footer.svg" alt="Логотип «Девайс»" width="144,9" height="36">
           <p class="about-text">Санкт-Петербург, набережная
             реки Карповки, 5, литера П.</p>
+            <span class="footer-line"></span>
         </section>
   
         <section class="list">

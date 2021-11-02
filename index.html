@@ -13,54 +13,52 @@
         <a class="navigation-logo" href="index.html">
           <img class="page-header-logo" src="img/svg/device.svg" width="145" height="36" alt="Логотип «Девайс»">
         </a>
-        <ul class="navigation-list">
-          <li>
+        <ul class="navigation-user">
+          <li class="navigation-search">
             <form class="search" action="https://echo.htmlacademy.ru">
               <label class="visually-hidden" for="search">Поиск</label>
             <input type="search" id="search" name="q" placeholder="Поиск по сайту">
           </form>
           </li>
-          <li>
-              <a class="navigation-link" href="catalog.html">Каталог товаров</a>
-              <ul>
-                <li>
-                  <a class="virtual-reality" href="#">Виртуальная реальность</a>
-                </li>
-                <li>
-                <a class="monopods" href="#">Моноподы для cелфи</a>
-                </li>
-                <li>
-                <a class="action-cameras" href="#">Экшн-камеры</a>
-                </li>
-                <li>
-                <a class="fitness-bracelets" href="#">Фитнес-браслеты</a>
-                </li>
-                <li>
-                <a class="smart-watch" href="#">Умные часы</a>
-                </li>
-                <li>
-                <a class="quadcopters" href="#">Квадрокоптеры</a>
-                </li>
-              </ul>
-          </li>
-        </ul>
-        <ul class="navigation-user">
-          <li class="navigation-item">
+          <li class="navigation-item navigation-login">
             <a class="navigation-link-user" href="#" >Войти</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-user" href="#">Сравнить</a>
+            <a class="navigation-link-user navigation-compare" href="#">Сравнить</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link-user" href="#">Корзина</a>
           </li>
         </ul>
         <ul class="navigation-list">
+          <li class="navigation-catalog">
+            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+            <ul class="menu-catalog visually-hidden">
+              <li>
+                <a class="navigation-link-user" href="#">Виртуальная реальность</a>
+              </li>
+              <li>
+              <a class="navigation-link-user" href="#">Моноподы для cелфи</a>
+              </li>
+              <li>
+              <a class="navigation-link-user" href="#">Экшн-камеры</a>
+              </li>
+              <li>
+              <a class="navigation-link-user" href="#">Фитнес-браслеты</a>
+              </li>
+              <li>
+              <a class="navigation-link-user" href="#">Умные часы</a>
+              </li>
+              <li>
+              <a class="navigation-link-user" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+        </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#" >Доставка</a>
+            <a class="navigation-link navigation-delivery" href="#" >Доставка</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гарантия</a>
+            <a class="navigation-link navigation-garant" href="#">Гарантия</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Контакты</a>
@@ -160,6 +158,8 @@
 
       </section>
 
+
+      <!-- Категории -->
       <section class="category">
       <h2 class="visually-hidden">Категории</h2>
       <ul class="category-list">
@@ -299,29 +299,27 @@
       </section>
     </div>
 
-  <div class="page-newsletter">
-
-      <section class="newsletter">
+    <div class="container-newsletter">
+  <section class="page-newsletter">
         <h3 class="newsletter-title">Подпишитесь
           на рассылку</h3>
+          <p class="newsletter-text">Еженедельный дайджест с обзорами новинок,
+            длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="newsletter-form-container">
             <p class="newsletter-form-name">
               <label class="visually-hidden" for="newsletter-email">Email</label>
               <input type="text" id="newsletter-email" name="newsletter-e-mail" placeholder="Ваш e-mail" >
             </p>
-          </section>
-
-        <section class="newsletter p">
-          <p>Еженедельный дайджест с обзорами новинок,
-            длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          
             <button class="button-newsletter" type="submit">Подписаться</button>
+          </div>
+            <p class="free">Это бесплатно</p>
           </form>
           
-            <p class="free">Это бесплатно</p>
-          
-      </section>
+      </div>
     </main>
-  </div>
+  </section>
 
     <footer class="page-footer">
       <div class="page-footer-container">
@@ -330,6 +328,7 @@
           <img class="footer-logo" src="img/svg/device_footer.svg" alt="Логотип «Девайс»" width="144,9" height="36"></a>
         <p class="about-text">Санкт-Петербург, набережная
           реки Карповки, 5, литера П.</p>
+          <span class="footer-line"></span>
       </section>
 
       <section class="list">
