@@ -11,22 +11,20 @@
             <a class="navigation-logo" href="index.html">
               <img class="page-header-logo" src="img/svg/device.svg" width="145" height="36" alt="Логотип «Девайс»">
             </a>
-          <ul class="navigation-list">
-            <li>
+          <ul class="navigation-user">
+            <li class="navigation-search">
                 <form class="search" action="https://echo.htmlacademy.ru">
                     <label class="visually-hidden" for="search">Поиск</label>
-                  <input type="search" name="q" placeholder="Поиск по сайту">
+                  <input type="search" id="search" name="q" placeholder="Поиск по сайту">
                 </form>
-            </li>
-          </ul>
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
+            </li>   
+            <li class="navigation-item navigation-login">
               <a class="navigation-link-user" href="#">Коля Петухов</a>
             </li>
             <li class="navigation-logout">
                 <a class="navigation-link-user" href="#">Выйти</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-compare">
               <a class="navigation-link-user" href="#">Сравнить</a>
             </li>
             <li class="navigation-item">
@@ -41,10 +39,10 @@
             </li>
             <li class="navigation-item">
               <section class="navigation-delivery-garant-contacts">
-              <a class="navigation-link" href="#" >Доставка</a>
+              <a class="navigation-link navigation-delivery" href="#" >Доставка</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Гарантия</a>
+              <a class="navigation-link navigation-garant" href="#">Гарантия</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">Контакты</a>
@@ -74,7 +72,7 @@
           <section class="catalog-products">
               </nav>
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-                <h2 class="catalog-products">фильтр:</h2>
+                <h2 class="catalog-products filter-title">фильтр:</h2>
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-title">Стоимость</legend>
                     <button class="range-toggle toggle-min" type="button">
@@ -214,6 +212,8 @@
 
                 <button class="button-pagination-show-more" type="button">Загрузить еще</button>
 
+                 <!-- Пагинация -->
+                <div class="pagination-container">
                 <ul class="pagination">
                     <li class="pagination-item">
                       <a class="pagination-link pagination-prev pagination-disabled">
@@ -241,6 +241,7 @@
                       </a>
                     </li>
                   </ul>
+                </div>
             </div>
           </section>
         </div>  
