@@ -201,7 +201,6 @@ body {
     display: flex;
   justify-content: space-between;
   margin: 0;
-  padding: left;
   list-style-type: none;
   }
 
@@ -507,6 +506,7 @@ line-height: 24px;
 letter-spacing: -0.02em;
 color: #000000;
 text-decoration: none;
+margin-top: 33px;
 
 }
 
@@ -548,6 +548,7 @@ text-align: center;
 letter-spacing: 0.2em;
 text-transform: uppercase;
 color: #000000;
+margin-left: 72px;
 }
 
 .catalog-title {
@@ -654,6 +655,7 @@ margin-top: 25px;
 }
 
 .catalog-products {
+  margin-top: 50px;
   display: flex;
   
 }
@@ -663,12 +665,47 @@ margin-top: 25px;
 }
 
 .product-list {
+  display: grid;
+  grid-template-columns: repeat(2, 360px); 
   list-style-type: none;
   margin: 0;
+  margin-left: 72px;
+  margin-bottom: 44px;
   padding: 0;
+  gap: 40px; 
+}
+
+.product-card {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card-content {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+
+
+.product-card-price {
+  font-family: "Rubik", sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+text-align: right;
+color: #444444;
+margin-top: 33px;
+}
+
+.product-card-button {
+  visibility: hidden;
 }
 
 .catalog-filter {
+  margin-top: -50px;
   width: 328px;
 }
 
@@ -776,6 +813,7 @@ color: #FFFFFF;
   display: flex;
   background-color: #EBEBEB;
   margin-bottom: 70px;
+  margin-left: 72px;
   margin-top: 50px;
 }
 
