@@ -507,8 +507,9 @@ letter-spacing: -0.02em;
 color: #000000;
 text-decoration: none;
 margin-top: 33px;
-
+width: 280px;
 }
+
 
 .back-forward {
     font-family: "Raleway", sans-serif;
@@ -683,11 +684,12 @@ margin-top: 25px;
 
 .product-card-content {
   display: flex;
-  flex-direction: row;
-  flex-grow: 1;
+  justify-content: space-between;
 }
 
-
+.product-card-link {
+  text-decoration: none;
+}
 
 .product-card-price {
   font-family: "Rubik", sans-serif;
@@ -698,10 +700,11 @@ line-height: 21px;
 text-align: right;
 color: #444444;
 margin-top: 33px;
+margin-left: auto;
 }
 
 .product-card-button {
-  visibility: hidden;
+  display: none;
 }
 
 .catalog-filter {
@@ -742,7 +745,7 @@ margin-top: 33px;
 }
 
 .about-and-contacts p, .contacts-schedule {
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
 
