@@ -15,38 +15,18 @@
         </a>
         <ul class="navigation-user">
           <li class="navigation-search">
-            <a class="search-button" href="#">
-            <svg class="navigation-icon-search" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="m15.7 14.3-3.1-3.1C13.5 10 14 8.6 14 7c0-3.9-3.1-7-7-7S0 3.1 0 7s3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z" fill="#000"/>
-            </svg>
-          </a>
             <form class="search" action="https://echo.htmlacademy.ru">
               <label class="visually-hidden" for="search">Поиск</label>
             <input type="search" id="search" name="q" placeholder="Поиск по сайту">
           </form>
           </li>
           <li class="navigation-item navigation-login">
-            <a class="person-button" href="#">
-            <svg class="navigation-icon-person" width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0S3 1.6 3 3.5c0 1.3.7 2.4 1.7 3C2.1 7.2.2 9.4 0 12Z" fill="#000"/>
-            </svg>
-          </a>
             <a class="navigation-link-user" href="#" >Войти</a>
           </li>
           <li class="navigation-item navigation-compare">
-            <a class="compare-button" href="#">
-            <svg class="navigation-icon-compare" width="10" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" fill="#000"/>
-            </svg>
-          </a>
             <a class="navigation-link-user" href="#">Сравнить</a>
           </li>
           <li class="navigation-item navigation-cart">
-            <a class="cart-button>" href="#">
-            <svg class="navigation-icon" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z" fill="#000"/>
-            </svg>
-          </a>
             <a class="navigation-link-user" href="#">Корзина</a>
           </li>
         </ul>
@@ -74,13 +54,13 @@
               </li>
             </ul>
         </li>
-          <li class="navigation-item">
+          <li class="navigation-item-dgc">
             <a class="navigation-link navigation-delivery" href="#" >Доставка</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item-dgc">
             <a class="navigation-link navigation-garant" href="#">Гарантия</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item-dgc">
             <a class="navigation-link" href="#">Контакты</a>
           </li>
         </ul>
@@ -94,7 +74,12 @@
         <h2 class="visually-hidden">Популярные товары</h2>
         <div class="gallery-slide">
         <img class="slider-image" src="img/slider/slider-1.png" alt="Виды техники" width="560" height="560" >
-
+        <button class="slider-button slider-next" type="button">
+          <span class="visually-hidden">Предыдущее фото</span>
+        </button>
+        <button class="slider-button slider-prev" type="button">
+          <span class="visually-hidden">Следующее фото</span>
+        </button>
         <div class="description-slider">
         <h3>Порхает как бабочка,
           жалит как пчела!</h3>
@@ -102,12 +87,16 @@
           </p>
           <a class="button button-all" href="#">Подробнее</a>
           <table>
-          <dl>
-              <dt>800 м</dt>
-              <dd>Дальность полета</dd>
-              <dt>50 м</dt>
-              <dd>Радиус поражения</dd>
-        </dl>
+          <div class="advantages">
+            <div>
+              <div class="nambers-description-slider">800 м</div>
+              <div class="mimi-description-slider">Дальность полета</div>
+            </div>
+            <div>
+              <div class="nambers-description-slider">50 м</div>
+              <div class="mimi-description-slider">Радиус поражения</div>
+            </div>
+          </div>
         </table>
       </div>
     </div>
@@ -123,8 +112,8 @@
           <a class="button button-all" href="#">Подробнее</a>
           <table>
           <dl>
-              <dt>48 часов</dt>
-              <dd>Без подзарядки</dd>
+              <dt class="nambers-description-slider">48 часов</dt>
+              <dd class="mimi-description-slider">Без подзарядки</dd>
         </dl>
         </table>
       </div>
@@ -138,15 +127,18 @@
           <p class="description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
           </p>
           <a class="button button-all" href="#">Подробнее</a>
+        <div class="advantages">
           <table>
-          <dl>
-              <dt>8,5 м</dt>
-              <dd>Длина палки</dd>
-              <dt>5 кг</dt>
-              <dd>Вес палки</dd>
-              <dt>Карбон</dt>
-              <dd>Материал</dd>
+            <div class="advantages">
+          <dl class="advantages">
+              <dt class="nambers-description-slider">8,5 м</dt>
+              <dd class="mimi-description-slider">Длина палки</dd>
+              <dt class="nambers-description-slider">5 кг</dt>
+              <dd class="mimi-description-slider">Вес палки</dd>
+              <dt class="nambers-description-slider">Карбон</dt>
+              <dd class="mimi-description-slider">Материал</dd>
         </dl>
+      </div>
         </table>
       </div>
     </div>
@@ -196,7 +188,7 @@
             <span class="category-Rectangle">
               <img class="monopods" src="img/popular/popular-2.svg" alt="Моноподы для селфи" width="86" height="117">
             </span>
-          <span class="category-name">Моноподы для селфи</span>
+          <span class="category-name">Моноподы <br>для селфи</span>
         </a>
         </li>
         <li class="category-item">
@@ -243,18 +235,18 @@
           <a class="button-delivery" href="#">Доставка</a>
         </li>
         <li>
-          <a class="button" href="#">Гарантия</a>
+          <a class="button button-services" href="#">Гарантия</a>
         </li>
         <li>
-          <a class="button" href="#">Кредит</a>
+          <a class=" button button-services" href="#">Кредит</a>
         </li>
       </ul>
     
 
       <div class="delivery">
       <h3 class="delivery-title">Доставка</h3>
-      <p>Мы с удовольствием доставим ваш товар прямо
-        к вашему подъезду совершенно бесплатно! Ведь
+      <p>Мы с удовольствием доставим ваш товар прямо<br>
+        к вашему подъезду совершенно бесплатно! Ведь<br>
         мы неплохо заработаем, поднимая его на ваш этаж.</p>
       </div>
 
@@ -276,13 +268,15 @@
 
       <section class="info">
         <a class="button-info" href="#">
-          Доставим редкий товар под заказ
-          <span class="icon"></span>
+          <span class="info-rectangle"></span>
+          <div class="rare-product">Доставим редкий товар под заказ</div>
+          <span class="info-icon"></span>
         </a>
       </section>
 
       <div class="about-and-contacts">  
       <section class="about">
+        <span class="about-line"></span>
         <h3 class="about-title">О нас</h3>
         <p class="about-paragraph">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
       <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
@@ -298,10 +292,11 @@
         ТоксБерри
         </li>
       </ul>
-      <a class="button" href="#">Подробнее о нас</a>
+      <a class="button button-about" href="#">Подробнее о нас</a>
 
       </section>
       <section class="contacts">
+        <span class="contacts-line"></span>
       <h3 class="contacts-title">Контакты</h3>
       <p>Вы можете забрать товар сами, заехав в наш офис. 
         Заодно, сможете проверить работоспособность покупки. </p>
@@ -315,7 +310,7 @@
           <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
           <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
         </ul>
-        <a class="button" href="#">Напишите нам</a>
+        <a class="button button-contacts" href="#">Напишите нам</a>
       </section>
     </div>
 
@@ -323,8 +318,8 @@
   <section class="page-newsletter">
         <h3 class="newsletter-title">Подпишитесь
           на рассылку</h3>
-          <p class="newsletter-text">Еженедельный дайджест с обзорами новинок,
-            длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          <p class="newsletter-text">Еженедельный дайджест с обзорами новинок,<br>
+            длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="newsletter-form-container">
             <p class="newsletter-form-name">
@@ -360,9 +355,10 @@
           <li class="navigation-item">
             <a class="footer-navigation" href="#">Гарантия</a>
           </li>
-          <li class="navigation-item">
+          <ul class="navigation-item">
             <a class="footer-navigation" href="#">Контакты</a>
-  
+          </ul>
+          <ul class="footer-navigation social-navigation">
           <li class="footer-social-item">
             <a class="footer-social-link footer-social-fb" href="#">
               <span class="visually-hidden">Фейсбук</span>
@@ -378,6 +374,7 @@
               <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
+        </ul>
         </ul>
           </section>
          
