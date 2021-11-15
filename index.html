@@ -17,7 +17,7 @@
       <li class="navigation-search">
         <form class="search" action="https://echo.htmlacademy.ru">
           <label class="visually-hidden" for="search">Поиск</label>
-          <input type="search" id="search" name="q" placeholder="Поиск по сайту">
+          <input class="search-on-web" type="search" id="search" name="q" placeholder="Поиск по сайту">
         </form>
       </li>
       <li class="navigation-item navigation-login">
@@ -272,9 +272,10 @@
     <section class="services">
       <h2 class="visually-hidden">Сервисы</h2>
       <ul class="services-list">
+        <span class="services-line"></span>
         <li>
-          <a class="button services-button" href="#">
-            <span>Доставка</span>
+          <a class="button services-button delivery-services-button" href="#">
+            <span class="delivery-services">Доставка</span>
           </a>
         </li>
         <li>
@@ -385,7 +386,7 @@
         <div class="newsletter-form-container">
           <p class="newsletter-form-name">
             <label class="visually-hidden" for="newsletter-email">Email</label>
-            <input type="text" id="newsletter-email" name="newsletter-e-mail" placeholder="Ваш e-mail" >
+            <input class="login-e-mail-newsletter" type="text" id="newsletter-email" name="newsletter-e-mail" placeholder="Ваш e-mail" >
           </p>
 
           <button class="button-newsletter" type="submit">Подписаться</button>

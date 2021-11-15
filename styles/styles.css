@@ -65,6 +65,15 @@ body {
     margin-top: -23px;
   }
 
+  .search-on-web {
+    background: transparent;
+    border: none;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    opacity: 0.3;
+  }
+
   .page-header {
     color: #000000;
     background: #FFE17F;
@@ -277,7 +286,7 @@ color: #000000;
 }
 
 .menu-catalog {
-  display: none
+display: none;
 }
 
 .navigation-list {
@@ -706,6 +715,18 @@ top: 0;
     flex-wrap: wrap;
   }
 
+  .login-e-mail-newsletter {
+    background: transparent;
+    font-family: "Rubik", sans-serif;
+font-size: 18px;
+line-height: 30px;
+color: #444444;
+opacity: 0.5;
+border: none;
+width: 600px;
+height: 55px;
+  }
+
   .newsletter-title {
     padding-right: 15%;
     box-sizing: border-box;
@@ -781,6 +802,9 @@ h3 {
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
+    position: absolute;
+    left: 104%;
+    top: 5px;
 
     width: 260px;
 height: 55px;
@@ -791,6 +815,7 @@ box-sizing: border-box;
 .newsletter-form-name {
   margin-top: 0;
   margin-bottom: 0;
+  border-bottom: 3px solid #d8d8d8;
 }
 
 .free {
@@ -809,6 +834,7 @@ box-sizing: border-box;
 .newsletter-form-container {
   width: 50%;
   display: flex;
+  position: relative;
 }
 
 
@@ -897,6 +923,7 @@ z-index: 1;
   .services-button:hover {
     background-color: #FFC700;
   }
+
   
   .contacts-address {
     font-style: normal;
@@ -1350,6 +1377,16 @@ margin-left: auto;
   position: relative;
 }
 
+.services-line {
+    width: 7px;
+    height: 320px;
+    display: block;
+    background-color: #000000;
+    position: absolute;
+    left: 277px;
+    bottom: 80px;
+}
+
 .services-item {
   flex-grow: 1;
   padding-left: 115px;
@@ -1370,6 +1407,28 @@ margin-left: auto;
   margin-left: 40px;
   list-style-type: none;
   width: 280px;
+  margin-top: -25px;
+}
+
+.delivery-services-button:active {
+  width: 280px;
+height: 40px;
+background-color: #000000;
+}
+
+.delivery-services-button span {
+  z-index: 1;
+  position: relative;
+}
+
+.delivery-services {
+  color: #FFE17F;
+}
+
+.delivery-services-button::after {
+background-color: #000000;
+position: absolute;
+content: "";
 }
 
 .button-info {
